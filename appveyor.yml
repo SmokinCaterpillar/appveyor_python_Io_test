@@ -36,5 +36,5 @@ install:
 build: false
 
 test_script:
-    - python do_io
+    - python do_io.py
 
