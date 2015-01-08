@@ -4,11 +4,12 @@ __author__ = 'robert'
 import os
 
 
-os.mkdir('./test')
+if not os.path.isdir('./test'):
+    os.mkdir('./test')
 
 with open('./test/data.txt', mode='w') as fh:
 
-    fh.wirte('testdata')
+    fh.write('testdata')
 
 
 with open('./test/data.txt', mode='r') as fh:
